@@ -2,6 +2,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,6 +76,10 @@ body {
   text-align: center;
 }
 
+#hero .container{
+  padding:0;
+}
+
 h1 {
   font-size: 14px;
   color: #ffd3b8;
@@ -104,7 +109,9 @@ h4 {
   font-size: 22px;
   margin-top: 15px;
 }
-
+.pb-20{
+  padding-bottom: 20px;
+}
 .rating-stats {
   margin-top: 6px;
 }
@@ -427,6 +434,11 @@ table td.td-col-1 {
   transition: visibility 0.3s ease-in-out;
 }
 
+.section-main .comparison-img img{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -671,6 +683,12 @@ img.img-top-right {
   box-shadow: 0px 0px 10px rgb(154, 166, 255)
 }
 
+.desktop-hero-image,
+.desktop-break,
+.more-about-bezels-2{
+  display: none;
+}
+
 @media (max-width:625px){
 
   .container{
@@ -687,7 +705,7 @@ img.img-top-right {
 
   .newsletter-image{
     width: 250px;
-    height:auto;
+    height:250px;
   }
 
   .newsletter-form{
@@ -695,3 +713,326 @@ img.img-top-right {
     text-align: center;
   }
 }
+
+@media (min-width: 776px){
+
+
+  #hero{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    min-height: 84vh;
+  }
+
+  #hero .container{
+    margin: unset;
+    max-width: unset;
+    width: 100%;
+  }
+
+  #hero .text > *{
+    padding-left:40%;
+  }
+  .desktop-hero-image,
+  .desktop-break,
+  .more-about-bezels-2{
+    display: block;
+  }
+  .mobile-hero-image,
+  .mobile-break,
+  .more-about-bezels-1{
+    display: none;
+  }
+
+  .btn-large{
+    padding:16px 80px;
+  }
+
+
+  .under-btn{
+    padding-bottom: 0;
+    margin-top: 20px;
+  }
+
+  #hero .under-btn{
+    width: 346px;
+
+  }
+  .under-btn .dash{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #hero .container{
+    display: flex;
+  }
+
+  #hero .text,
+  #hero .desktop-hero-image{
+    width: 50%;
+  }   
+  #hero .desktop-hero-image{
+    display: flex;
+    align-items: center;
+  }
+  .desktop-hero-image img{
+    width: 100%;
+  }
+
+  #testimonials-section{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: #eeeeee30;
+  }
+
+  #testimonials-section img{
+    margin-left: auto;
+    width: 55vw;
+  }
+
+  #testimonials-section .testimonial{
+    margin-left: auto;
+  }
+
+  #comparison-section{
+    display: flex;
+    padding: 0;
+    background: #fcfcfc;
+  }
+
+  #comparison-section .about-product{
+    width: 50%;
+    order:2;
+    align-self: center;
+  }
+
+  #comparison-section .comparison-img img{
+    margin:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #comparison-section .comparison-img{
+    width: 100%;
+  }
+
+  .more-about-bezels span{
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
+
+  .more-about-bezels p{
+    margin: 0 auto;
+    max-width: 520px;
+    text-align: center;
+
+  }
+
+  .more-about-bezels-2{
+    padding: 25px 15px;
+  }
+
+
+
+
+  #second-testimonials-section{
+    display: flex;
+  }
+  #second-testimonials-section .testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  #second-testimonials-section img{
+    width: 55%;
+  }
+
+  #product-description{
+    background-color: #fcfcfc;
+  }
+
+  #product-description .description-header{
+    text-align: center;
+  }
+  #product-description table{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  #product-description table td:not(.td-col-1){
+    text-align: center;
+  }
+
+  #product-description .other-stats p{
+    width: 430px;
+    margin: 5px;
+  }
+
+  #product-description .other-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .judgeme_widget_placeholder{
+    width: 80vw;
+    margin: auto;
+  }
+
+  #order-now{
+    display: flex;
+  }
+
+  #order-now .section-main{
+    width: 50%;
+  }
+  #order-now .section-main:not(.pale-yellow-bg){
+    order:1;
+    background-color: #fcfcfc;
+  }
+  #order-now .section-main.pale-yellow-bg{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1190px) and (min-width:940px) {
+  #hero .text > *{
+    padding-left:25%;
+  }
+
+
+}
+
+
+@media (max-width: 1190px)  and (min-width:776px){
+  #comparison-section .about-product{
+    padding-bottom: 15px;
+  }
+  #comparison-section .about-product h3{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+
+  #comparison-section .about-product p{
+    margin:0;
+  }
+
+  #comparison-section .about-product .down-arrow{
+    font-size:35px;
+  }
+
+  #second-testimonials-section .testimonial{
+    padding-top:0px;
+    padding-bottom:20px;
+  }
+
+  .more-about-bezels-2{
+    padding-bottom: 10px;
+  }
+
+  #second-testimonials-section .testimonial:before{
+    font-size: 50px;
+  }
+
+  #second-testimonials-section  .testimonial-close.no-bottom-border{
+    border-bottom-color: transparent;
+  }
+
+
+}
+
+@media (max-width: 950px)  and (min-width:776px){
+  #comparison-section .about-product h3{
+    font-size: 25px;
+  }
+  #comparison-section .about-product .down-arrow{
+    font-size: 30px;
+
+  }
+
+  #comparison-section .about-product p{
+    font-size: 14px;
+  }
+
+  #second-testimonials-section p{
+    font-size: 15px;
+  }
+
+  #second-testimonials-section .testimonial{
+    padding-bottom: 15px;
+  }
+  #second-testimonials-section .testimonial .testimonial-smaller-text{
+    font-size: 19px;
+  }
+
+  #second-testimonials-section .testimonial .testimonial-content{
+    margin-top: -35px;
+  }
+  #second-testimonials-section .testimonial .testimonial-author{
+    margin-top:10px;
+    font-size: 13px;
+  }
+
+  #second-testimonials-section .testimonial .testimonial-close{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 850px)  and (min-width:776px){
+  #comparison-section .about-product .down-arrow{
+    font-size: 25px;
+  }
+
+  #comparison-section .about-product h3{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  p.pb-20{
+    padding-bottom: 5px;
+  }
+
+  .more-about-bezels-2{
+    padding: 10px 15px;
+  }
+
+  #second-testimonials-section .testimonial .testimonial-author{
+    margin-top: 5px;
+  }
+
+  #second-testimonials-section .testimonial{
+    padding-bottom: 5px;
+  }
+
+  #second-testimonials-section .testimonial:before{
+    font-size: 42px;
+  }
+  #second-testimonials-section img{
+    width: 65%;
+  }
+
+  #second-testimonials-section .small-popup-button{
+    padding: 4px 9px 4px 9px;
+    font-size: 13px;
+  }
+
+  .btn-large{
+    padding: 16px 60px;
+  }
+}
+
+@media (max-width: 940px) and (min-width:625px) {
+  #hero .text > *{
+    padding-left:8%;
+  }
+}
+

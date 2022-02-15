@@ -43,33 +43,7 @@ document.querySelector(".contact-us").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector('#email_signup').addEventListener('submit', e=>{
-  e.preventDefault();
 
-  console.log('asd')
-
-  // const initiateSend = function(){
-  //   var settings = {
-  //       "async": true,
-  //       "crossDomain": true,
-  //       "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
-  //       "method": "POST",
-  //       "headers": {
-  //       "content-type": "application/x-www-form-urlencoded",
-  //       "cache-control": "no-cache"
-  //       },
-  //       "data": {
-  //       "g": "TksrLy",
-  //       // "$fields": "$first_name,$last_name,Favorite Color,Favorite Book,$source",
-  //       "email": `${document.querySelector('#k_id_email').innerText}`,
-  //       "$source": "Custom Form"
-  //       }
-  //   }
-  //   $.ajax(settings).done(function (response) {
-  //       console.log(response);
-  //   });
-  //   }
-})
 
 
 // Live Chat
