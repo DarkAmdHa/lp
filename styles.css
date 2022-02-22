@@ -690,7 +690,17 @@ img.img-top-right {
   display: none;
 }
 
+
+
 @media (max-width:625px){
+
+  #second-testimonials-section .container,
+  #comparison-section .container,
+  #testimonials-section .container
+  {
+    padding: 0;
+  }
+
 
   .container{
     padding: 30px 0;
@@ -717,6 +727,10 @@ img.img-top-right {
 
 @media (min-width: 776px){
 
+  #hero .text h2{
+    min-width: 551px;
+
+  }
 
   #hero{
     display: flex;
@@ -965,10 +979,10 @@ img.img-top-right {
     justify-content: center;
   }
   .sticky-header-left-col{
-    width: 30%;
+    width: 14%;
   }
   .sticky-header-right-col{
-    width: 45%;
+    width: 10%;
   }
 }
 
