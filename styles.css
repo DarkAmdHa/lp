@@ -135,6 +135,7 @@ a.btn:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  transition:background 0.5s ease;
 }
 
 a.btn:hover,
@@ -979,10 +980,11 @@ img.img-top-right {
     justify-content: center;
   }
   .sticky-header-left-col{
-    width: 14%;
+    width: fit-content;
   }
   .sticky-header-right-col{
-    width: 10%;
+    width: fit-content;
+    margin-left: 20px;
   }
 }
 
