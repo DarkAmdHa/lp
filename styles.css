@@ -370,6 +370,7 @@ table td.td-col-1 {
 
 /* Sticky header */
 #sticky-header {
+  align-items: center;
   display: flex;
   position: fixed;
   top: 0;
@@ -721,7 +722,9 @@ img.img-top-right {
     display: flex;
     align-items: center;
     text-align: left;
-    min-height: 84vh;
+    min-height: 95vh;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #hero .container{
@@ -732,6 +735,15 @@ img.img-top-right {
 
   #hero .text > *{
     padding-left:40%;
+  }
+
+
+  #hero .text h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+  } 
+  #hero .text .rating-stats{
+    margin-bottom: 10px;
   }
   .desktop-hero-image,
   .desktop-break,
@@ -779,27 +791,31 @@ img.img-top-right {
   }
 
   #testimonials-section{
-    display: flex;
-    align-items: center;
-    margin: auto;
     background: #eeeeee30;
   }
 
+  #testimonials-section .container{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+
   #testimonials-section img{
-    margin-left: auto;
-    width: 55vw;
+    width: 50%;
   }
 
   #testimonials-section .testimonial{
-    margin-left: auto;
+    width: 50%;
   }
 
   #comparison-section{
-    display: flex;
     padding: 0;
     background: #fcfcfc;
   }
-
+  #comparison-section .container{
+    display: flex;
+    padding: 0 0 15px 0;
+  }
   #comparison-section .about-product{
     width: 50%;
     order:2;
@@ -814,6 +830,23 @@ img.img-top-right {
 
   #comparison-section .comparison-img{
     width: 100%;
+    display: flex;
+  }
+
+  #comparison-section .about-product{
+    padding-bottom: 15px;
+  }
+  #comparison-section .about-product h3{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+
+  #comparison-section .about-product p{
+    margin:0;
+  }
+
+  #comparison-section .about-product .down-arrow{
+    font-size:35px;
   }
 
   .more-about-bezels span{
@@ -835,20 +868,36 @@ img.img-top-right {
 
 
 
-
   #second-testimonials-section{
+    padding: 0 0 15px 0;
+    background-color: #fcfcfc;
+  }
+  #second-testimonials-section .container{
     display: flex;
+    padding: 0;
   }
   #second-testimonials-section .testimonials{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 35%;
   }
 
   #second-testimonials-section img{
-    width: 55%;
+    width: 65%;
+  }
+
+  #second-testimonials-section .testimonial{
+    padding-top:0px;
+    padding-bottom:20px;
+  }
+  .more-about-bezels-2{
+    padding-bottom: 10px;
+  }
+
+  #second-testimonials-section .testimonial:before{
+    font-size: 50px;
   }
 
   #product-description{
@@ -865,11 +914,12 @@ img.img-top-right {
 
 
   #product-description table td:not(.td-col-1){
-    text-align: center;
+    text-align: left;
+    padding-left: 40px;
   }
 
   #product-description .other-stats p{
-    width: 430px;
+    width: 468px;
     margin: 5px;
   }
 
@@ -902,6 +952,24 @@ img.img-top-right {
     align-items: center;
     justify-content: center;
   }
+
+  #footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer > div{
+    width: 20%;
+  }
+  #sticky-header{
+    justify-content: center;
+  }
+  .sticky-header-left-col{
+    width: 30%;
+  }
+  .sticky-header-right-col{
+    width: 45%;
+  }
 }
 
 @media (max-width: 1190px) and (min-width:940px) {
@@ -914,34 +982,11 @@ img.img-top-right {
 
 
 @media (max-width: 1190px)  and (min-width:776px){
-  #comparison-section .about-product{
-    padding-bottom: 15px;
-  }
-  #comparison-section .about-product h3{
-    padding-top:10px;
-    padding-bottom: 10px;
-  }
+  
 
-  #comparison-section .about-product p{
-    margin:0;
-  }
 
-  #comparison-section .about-product .down-arrow{
-    font-size:35px;
-  }
 
-  #second-testimonials-section .testimonial{
-    padding-top:0px;
-    padding-bottom:20px;
-  }
 
-  .more-about-bezels-2{
-    padding-bottom: 10px;
-  }
-
-  #second-testimonials-section .testimonial:before{
-    font-size: 50px;
-  }
 
   #second-testimonials-section  .testimonial-close.no-bottom-border{
     border-bottom-color: transparent;
